@@ -63,6 +63,7 @@ a {
 
     color: map-get($color-map, link);
     text-decoration: underline;
+    letter-spacing: 0.75px;
 
     &:hover,
     &:focus {
@@ -72,7 +73,7 @@ a {
     &:hover {
         background-color: map-get($color-map, link);
 
-        color: map-get($color-map, white);
+        color: map-get($color-map, offwhite);
         text-decoration: none;
     }
 }
