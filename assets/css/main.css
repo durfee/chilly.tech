@@ -206,8 +206,6 @@ a {
   color: #B0FCE2;
   text-decoration: none; }
   a:hover {
-    background-color: #B0FCE2;
-    color: #fff;
     text-decoration: none; }
 
 .u-rounded-corners {
@@ -249,6 +247,9 @@ a {
 .u-bg-white {
   background-color: #fff; }
 
+.u-bg-offwhite {
+  background-color: #f9f9fa; }
+
 .u-bg--brand-secondary {
   background-color: #0B2C5B; }
 
@@ -272,6 +273,9 @@ a {
 
 .u-border-white {
   border: 1px #fff solid; }
+
+.u-border-offwhite {
+  border: 1px #f9f9fa solid; }
 
 .u-border-top-primary {
   border-top: 1px #89E1E2 solid; }
@@ -333,6 +337,18 @@ a {
 .u-border-bottom-white {
   border-bottom: 1px #fff solid; }
 
+.u-border-top-offwhite {
+  border-top: 1px #f9f9fa solid; }
+
+.u-border-left-offwhite {
+  border-left: 1px #f9f9fa solid; }
+
+.u-border-right-offwhite {
+  border-right: 1px #f9f9fa solid; }
+
+.u-border-bottom-offwhite {
+  border-bottom: 1px #f9f9fa solid; }
+
 .u-color-primary {
   color: #89E1E2; }
 
@@ -347,6 +363,9 @@ a {
 
 .u-color-white {
   color: #fff; }
+
+.u-color-offwhite {
+  color: #f9f9fa; }
 
 .u-color--brand-primary {
   color: #F42232; }
@@ -1512,8 +1531,11 @@ a {
   font-size: 16px;
   text-align: center; }
   .c-button:hover, .c-button:active {
-    transform: translatex(5px);
-    color: #000; }
+    transform: translatex(5px); }
+
+.c-button--action {
+  background-color: #6187CF;
+  color: #fff; }
 
 .c-text-content > *:not(:last-child) {
   margin-bottom: 1rem; }
@@ -1580,5 +1602,26 @@ a {
   .t-marketing--logo {
     width: 400px;
     height: 320px; } }
+
+.t-feature--item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  @media screen and (min-width: 35rem) {
+    .t-feature--item {
+      border-right: 1px solid rgba(0, 0, 0, 0.1); } }
+
+.t-marketing--features {
+  position: relative; }
+  .t-marketing--features:before {
+    content: '';
+    position: absolute;
+    top: -15vw;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 25vw;
+    width: 100vw;
+    background: #f9f9fa;
+    transform: skew(0, -7deg);
+    z-index: -1; }
 
 /*# sourceMappingURL=main.css.map */

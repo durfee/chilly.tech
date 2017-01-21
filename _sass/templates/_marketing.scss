@@ -13,3 +13,28 @@
     height: 320px;
   }
 }
+
+.t-feature--item {
+  border-bottom: 1px solid transparentize($color-black, 0.9);
+  
+  @include --small-up {
+    border-right: 1px solid transparentize($color-black, 0.9);
+  }
+}
+
+.t-marketing--features {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -15vw;
+    left: 0;
+    right: 0;
+    display: block;    
+    height: 25vw;
+    width: 100vw;
+    background: $color-offwhite;
+    transform: skew(0, -7deg);
+    z-index: $z1-depth;
+  }
+}

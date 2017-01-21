@@ -1,4 +1,4 @@
-// Component: Text Content
+// Component: Button
 // ============================================================================
 //
 // The button component class is to be used for primary and secondary actions.
@@ -34,6 +34,11 @@
     &:hover,
     &:active {
         transform: translatex(5px);
-        color: $color-black;
     }
+}
+
+
+.c-button--action {
+    background-color: $color-secondary;
+    color: $color-white;
 }
