@@ -89,11 +89,9 @@ $leading-map: (
 // Colour Options
 // ---
 
-$primary-color:   $configure--primary-color;
-$secondary-color: $configure--secondary-color;
-$accent-color: $configure--accent-color;
-// $black: mix(#000, mix(#000, mix(#000, $configure--primary-color)));
-// $white: mix(#fff, mix(#fff, mix(#fff, $configure--primary-color)));
+$color-primary:   $configure--primary-color;
+$color-secondary: $configure--secondary-color;
+$color-accent: $configure--accent-color;
 
 $color-white: #fff;
 $color-offwhite: #f9f9fa;
@@ -102,11 +100,13 @@ $color-brand-primary: #F42232;
 $color-brand-secondary: #0B2C5B;
 
 $color-map: (
-    primary:   $primary-color,
-    secondary: $secondary-color,
-    link:      $accent-color,
+    primary:   $color-primary,
+    secondary: $color-secondary,
+    link:      $color-accent,
     black:     $color-black,
     white:     $color-white,
+    offwhite:  $color-offwhite,
+
 );
 
 
