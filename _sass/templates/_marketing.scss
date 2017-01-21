@@ -1,0 +1,15 @@
+// Template: Marketing Page
+// ============================================================================
+//
+
+.t-marketing--logo {
+  @include --small-up {
+    width: 350px;
+    height: 200px;
+  }
+
+  @include --medium-up {
+    width: 400px;
+    height: 320px;
+  }
+}

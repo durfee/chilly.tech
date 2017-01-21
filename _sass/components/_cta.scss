@@ -1,0 +1,18 @@
+// Component: CTA
+// ============================================================================
+//
+// The CTA component should be used for email callouts and primary actions
+// It should be applied to the wrapper element and it's children.
+//
+
+.c-cta {
+  margin-top: map-get($size-map, xl);
+  padding-bottom: map-get($size-map, xl);
+  margin-bottom: map-get($size-map, lg);
+}
+
+
+.c-cta--input {
+  
+  box-shadow: $shadow-dark, $shadow-cool;
+}

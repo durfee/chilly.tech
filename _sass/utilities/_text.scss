@@ -1,10 +1,6 @@
 // Utilities: Text
 // ============================================================================
 
-
-// Text Sizing
-// ---
-
 .u-text-size-base {
     @extend %type-copy;
 }
@@ -21,16 +17,6 @@
     @extend %type-small;
 }
 
-.u-text-size-huge {
-    font-size: $type-scale--huge;
-}
-.u-text-size-very-huge {
-    font-size: $type-scale--very-huge;
-}
-.u-text-size-massive {
-    font-size: $type-scale--massive;
-}
-
 
 // Text Styles
 // ---
@@ -38,12 +24,16 @@
 // 1. The same style could be applied by using an element. Think about what may
 //    be more semantically correct for your specific situation.
 
-.u-text-weight-normal {
-    font-weight: map-get($type-weight-map, base);
+.u-regular {
+    font-weight: $regular-font;
 }
 
 .u-bold {
-    font-weight: map-get($type-weight-map, bold); // 1
+    font-weight: $bold-font; // 1
+}
+
+.u-extra-bold {
+    font-weight: $extra-bold-font;
 }
 
 .u-italic {
@@ -80,16 +70,4 @@
 
 .u-capitalize {
     text-transform: capitalize;
-}
-
-
-// Text Clipping
-// ---
-
-.u-text-clip {
-    overflow: hidden;
-
-    color: transparent;
-    white-space: nowrap;
-    text-indent: 100%;
 }

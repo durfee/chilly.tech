@@ -5,6 +5,10 @@
     border: 0;
 }
 
+.u-border-2 {
+  border: 2;
+}
+
 @each $color-name, $color-value in $color-map {
     .u-border-#{$color-name} {
         border: 1px #{$color-value} solid;
