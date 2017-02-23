@@ -9,10 +9,12 @@
   margin-top: map-get($size-map, xl);
   padding-bottom: map-get($size-map, xl);
   margin-bottom: map-get($size-map, lg);
+
+  opacity: 0;
+  visibility: hidden;
 }
 
 
 .c-cta--input {
-  
   box-shadow: $shadow-dark, $shadow-cool;
 }

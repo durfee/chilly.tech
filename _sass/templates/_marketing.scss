@@ -15,10 +15,12 @@
 }
 
 .t-feature--item {
-  border-bottom: 1px solid transparentize($color-black, 0.9);
+  // border-bottom: 1px solid transparentize($color-black, 0.9);
   
   @include --small-up {
-    border-right: 1px solid transparentize($color-black, 0.9);
+    &:not(:last-child) {
+      border-right: 1px solid transparentize($color-black, 0.9);
+    }
   }
 }
 
