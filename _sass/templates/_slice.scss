@@ -1,0 +1,37 @@
+// Template: Slice
+// ============================================================================
+//
+
+.t-slice {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+
+  background: $color-brand-secondary url('../assets/img/texture.svg') 0 0 repeat;
+  background-size: 14%;
+  background-blend-mode: multiply;
+
+  z-index: $z1-depth;
+
+  transform: skewX(-10.25deg) translateX(-75%);
+  transition: transform 0.15s ease-in-out;
+
+  box-shadow: $shadow-dark;
+
+  @include --small-only {
+    display: none;
+  }
+
+  @include --small-up {
+    transform: skewX(-10.25deg) translateX(-80%);
+  }
+
+  @include --medium-up {
+    transform: skewX(-10.25deg) translateX(-75%);
+  }
+}

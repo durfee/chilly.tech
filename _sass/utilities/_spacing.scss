@@ -7,9 +7,6 @@
 // within the size category into the spacing class generator. The result is a
 // utility prefixed class for each direction and size for both padding and
 // margin.
-//
-// i.e. .u-padding-bottom-xs { padding-bottom: $space--very-small; }
-// i.e. .u-margin-top-xl { margin-top: $space--very-large; }
 
 $attribute-map: (
     margin,
@@ -20,6 +17,24 @@ $attribute-map: (
     @each $attribute in $attribute-map {
         .u-#{$attribute}-#{$direction}-#{$size} {
             #{$attribute}-#{$direction}: #{map-get($size-map, $size)};
+
+            @include --small-only {
+                &--small-only {
+                    #{$attribute}-#{$direction}: #{map-get($size-map, $size)};
+                }
+            }
+
+            @include --small-up {
+                &--small-up {
+                    #{$attribute}-#{$direction}: #{map-get($size-map, $size)};
+                }
+            }
+
+            @include --medium-up {
+                &--medium-up {
+                    #{$attribute}-#{$direction}: #{map-get($size-map, $size)};
+                }
+            }
         }
     }
 }
@@ -38,32 +53,29 @@ $attribute-map: (
 
 @include generate-spacing-classes;
 
-// Vertical and horizontal paddings
-// ---
 
-@each $size, $size-units in $size-map {
-    .u-px-#{$size} {
-        padding-left: #{$size-units};
-        padding-right: #{$size-units};
+.u-mx-auto { 
+    margin-left: auto; 
+    margin-right: auto; 
+
+    @include --small-only {
+        &--small-only {
+            margin-left: auto; 
+            margin-right: auto; 
+        }
     }
 
-    .u-py-#{$size} {
-        padding-top: #{$size-units};
-        padding-bottom: #{$size-units};
+    @include --small-up {
+        &--small-up {
+            margin-left: auto; 
+            margin-right: auto; 
+        }
     }
 
-    .u-mx-#{$size} {
-        margin-left: #{$size-units};
-        margin-right: #{$size-units};;
+    @include --medium-up {
+        &--medium-up {
+            margin-left: auto; 
+            margin-right: auto; 
+        }
     }
-
-    .u-my-#{$size} {
-        margin-top: #{$size-units};
-        margin-bottom: #{$size-units};
-    }
-}
-
-.u-mx-auto {
-    margin-right: auto;
-    margin-left: auto;
 }

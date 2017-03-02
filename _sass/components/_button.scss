@@ -1,4 +1,4 @@
-// Component: Text Content
+// Component: Button
 // ============================================================================
 //
 // The button component class is to be used for primary and secondary actions.
@@ -8,13 +8,37 @@
 // 2. Remove iOS and Android “buttonization” and use our own styles
 
 .c-button {
-    min-width: 44px; // 1
+    min-width: 160px; // 1
     min-height: 44px; // 1
 
-    border-radius: map-get($appearances-map, border-radius);
-    background: map-get($color-map, link);
+    background: $color-offwhite;
+    padding: 0.5em;
+
+    color: $color-black;
+    @extend %type-subheadline;
+    display: inline-block;
 
     cursor: pointer;
+    border: 0;
+    -webkit-appearance: none; // 2
+    appearance: none;
+    border-radius: 4px;
 
-    appearance: none; // 2
+    box-shadow: $shadow-dark, $shadow-cool;
+
+    transition: transform 0.15s ease-in-out;
+
+    font-size: 16px;
+    text-align: center;
+
+    &:hover,
+    &:active {
+        transform: translatex(5px);
+    }
+}
+
+
+.c-button--action {
+    background-color: $color-secondary;
+    color: $color-white;
 }

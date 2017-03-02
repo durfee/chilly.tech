@@ -1,91 +1,106 @@
 ---
 layout: default
 ---
-<header id="header" class="u-px-md u-padding-top-lg u-padding-bottom-lg">
+
+<header class="u-width-full u-flexbox u-bg-white u-color-black u-padding-top-md u-padding-bottom-md u-padding-left-md u-padding-right-md u-shadow--cool">
+  <div class="u-flex-expand u-uppercase u-text-size-small u-padding-left-sm u-padding-right-sm"><a class="u-color-black" href="/">Chilly</a></div>
+  <div class="u-flex-shrink u-uppercase u-text-size-small u-padding-left-sm u-padding-right-sm"><a class="u-color-black" href="#features">Features</a></div>
+  <div class="u-flex-shrink u-uppercase u-text-size-small u-padding-left-sm u-padding-right-sm"><a class="u-color-black" href="#team">Team</a></div>
+  <div class="u-flex-shrink u-uppercase u-text-size-small u-padding-left-sm u-padding-right-sm"><a class="u-color-black" href="#contact">Contact</a></div>
+</header>
+
+<div class="u-width-full c-hero">
+  <div class="u-measure-wide u-mx-auto u-padding-left-sm u-padding-right-sm">
+    <div class="u-flexbox u-flex-column u-margin-top-xl">
+      <div class="u-flex u-margin-top-md">
+        <h1 class="u-bold u-margin-bottom-md">Chilly</h1>
+        <h4 class="u-margin-bottom-sm">Fridge sensors for your restaurant or cafe.</h4>
+        <h4 class="u-margin-bottom-sm">Stop relying on staff to check.</h4>
+        <h4> Never lose product again.</h4>
+      </div>
+      <div class="c-hero--cta u-margin-top-lg u-flexbox u-flex-column--small-only u-padding-top-xl">
+        <a class="c-button js-form-trigger c-button--action">Interested?</a>
+        <a class="c-button u-margin-left-lg--small-up u-margin-top-md--small-only">Learn more</a>
+      </div>
+    </div>
+    <div class="c-cta u-measure-medium--small-up js-form">
+      <p class="u-margin-bottom-sm">Add yourself to the waiting list and we'll be in touch soon!</p>
+      <form action="mailchimp" method="put" accept-charset="utf-8" class="validate c-cta--form u-margin-left-sm--small-only u-margin-right-sm  u-margin-right-md--small-up u-margin-right-xl--medium-up">
+        <div class="u-flexbox u-flex-column--small-only u-width-full u-width-2of3--small-up u-mx-auto--small-up">
+          <input type="email" name="" class="c-cta--input u-border-0 u-padding-left-md u-padding-right-xs u-padding-top-md u-padding-bottom-md u-margin-bottom-sm--small-only u-text-size-base u-width-full u-flex-grow" placeholder="ineedtemperaturesensors@example.com">
+          <input type="submit" value="Invite Me" name="subscribe" id="mc-embedded-subscribe" class="c-button u-italic u-margin-left-sm--medium-up u-margin-left-sm--small-up u-flex-shrink">
+        </div>
+      </form>
+    </div>
+  </div>
+</div> <!-- /c-hero -->
+
+<div class="u-width-full u-bg-offwhite t-marketing--features u-padding-bottom-lg" id="features">
+  <div class="u-measure-wide u-mx-auto u-padding-left-sm u-padding-right-sm u-margin-top-xl u-margin-bottom-md">
+  <div class="u-flexbox u-flex-column--small-only u-margin-bottom-xl">
+    <div class="u-flex-expand t-feature--item u-padding-bottom-md u-padding-top-md u-padding-left-lg--small-up u-padding-right-sm u-padding-left-sm">
+      <h3 class="u-margin-bottom-sm u-uppercase u-color-secondary">Record</h3>
+      <div class="u-width-full"><img class="u-margin-top-md u-margin-bottom-md" src="{{ '/assets/images/lnr-cloud-sync.svg' | prepend: site.baseurl }}" alt=""></div>
+
+      <p class="">24 recordings a day. Don't forget your temperature logs again.</p>
+    </div>
+    <div class="u-flex-expand t-feature--item u-padding-bottom-md u-padding-top-md u-padding-left-lg--small-up u-padding-right-sm u-padding-left-sm">
+      <h3 class="u-margin-bottom-sm u-uppercase u-color-secondary">Report</h3>
+      <div class="u-width-full"><img class="u-margin-top-md u-margin-bottom-md" src="{{ '/assets/images/lnr-smartphone.svg' | prepend: site.baseurl }}" alt=""></div>
+      <p class="">Easily check the all of your devices' temperatures, live, 24-7.</p>
+    </div>
+    <div class="u-flex-expand t-feature--item u-padding-bottom-md u-padding-top-md u-padding-left-lg--small-up u-padding-right-sm u-padding-left-sm">
+      <h3 class="u-margin-bottom-sm u-uppercase u-color-secondary">Alert</h3>
+      <div class="u-width-full">
+        <img class="u-margin-top-md u-margin-bottom-md" src="{{ '/assets/images/lnr-alarm.svg' | prepend: site.baseurl }}" alt="">
+      </div>
+      <p class="">Get an alert before it's too late.</p>
+    </div>
+  </div>
+
+    <!-- Price -->
+    <div class="u-flexbox u-flex-column--small-only u-margin-bottom-lg">
+      
+      <div class="u-flex-expand u-width-2of3--small-up">
+        <div class="u-padding-right-xs u-padding-left-xs u-mx-auto">
+          <h1 class="u-bold" style="font-size: 4rem">$25 / Unit</h1>
+          <h1 class="u-bold" style="font-size: 4rem">$5 / month</h1>
+        </div>
+      </div>
+
+      <div class="u-flex-expand u-width-1of3--small-up u-padding-left-md">
+
+        <div class="c-card u-mx-auto u-flex-column">
+
+          <h3 class="c-card--title u-margin-bottom-sm">Pricing</h3>
+
+          <p>Simple.</p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Features -->
+    
+
+  </div>
+</div>
+<!-- /features -->
+
+<div class="u-measure-medium u-measure-wide--medium--up u-mx-auto u-padding-left-md u-padding-right-md u-padding-bottom-lg u-margin-bottom-xl">
+  <h2 class="u-margin-top-xl u-bold u-margin-bottom-xl ">Team</h2>
+  <h1>The Coffee Shop Owner</h1>
+  <p class="u-padding-bottom-md">Who lost a freezer full of product.</p>
+
+  <h1>The Hardware Engineer</h1>
+  <p class="u-padding-bottom-md">Who built a solution.</p>
   
+  <h1>The Software Guy</h1>
+  <p class="u-padding-bottom-md">Who made it reliable.</p>
 
-  <h1 class="u-bold u-margin-bottom-lg u-margin-top-lg">Chilly Technologies</h1>
-  <h2 class="u-text-weight-light">Networked. Affordable. Temperature sensors.</h2>
-  <nav class="u-margin-top-lg u-margin-bottom-lg u-margin-left-lg u-border-left-primary">
-    <ul class="u-list-reset">
-      <li class="u-inline-block u-margin-left-lg u-uppercase u-text-size-small u-bold u-py-md"><a href="#features" title="Features">Features</a></li>
-      <li class="u-inline-block u-margin-left-lg u-uppercase u-text-size-small u-bold u-py-md"><a href="#pricing" title="Pricing">Pricing</a></li>
-      <li class="u-inline-block u-margin-left-lg u-uppercase u-text-size-small u-bold u-py-md"><a href="#team" title="The Team">The Team</a></li>
-    </ul>
-  </nav>
+  <h1>The Designer</h1>
+  <p class="u-padding-bottom-md">Who made it easy.</p>
 
-</header><!-- /header -->
-
-
-<div class="u-full-vw u-px-md u-py-lg" id="features">
-  <h1 class="u-bold u-margin-bottom-lg">Features</h1>
-  <div class="u-mobile-flexbox">
-    <div class="u-width-1of3 u-flex u-margin-bottom-lg u-margin-right-md">
-      <h4 class="u-bold u-margin-bottom-md">A Feature</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo  consequat.</p>
-    </div>
-    <div class="u-width-1of3 u-flex u-margin-bottom-lg u-margin-right-md">
-      <h4 class="u-bold u-margin-bottom-md">A Feature</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo  consequat.</p>
-    </div>
-    <div class="u-width-1of3 u-flex u-margin-bottom-lg u-margin-right-md">
-      <h4 class="u-bold u-margin-bottom-md">A Feature</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo  consequat.</p>
-    </div>
-  </div>
 </div>
 
-<div class="u-measure-wide u-py-lg u-mx-auto u-px-md" id="pricing">
-  <h1 class="u-bold u-margin-bottom-lg">Pricing</h1>
-  <p class="u-py-md">Pricing is simple.</p>
-  <h1 class="u-text-size-huge u-align-center u-bold u-py-md">$5 / sensor / month</h1>
-  <p class="u-py-md">Don't want to pay for the units?</p>
-  <h1 class="u-text-size-huge u-align-center u-bold u-py-md">+$5 / sensor / month</h1>
-  <p class="u-py-md">That's it. No obscene hidden fees. No paywalled features.</p>
-  <h3 class="u-bold u-padding-bottom-md u-padding-top-lg">Interested?</h3>
-  <p class="u-text-size-large">Get in touch! <a href="mailto:team@chilly.tech">team@chilly.tech</a></p>
-</div>
-
-<div class="u-measure-wide u-px-md u-mx-auto u-padding-top-lg u-padding-bottom-lg" id="team">
-  <h1 class="u-bold u-margin-bottom-lg">The Team</h1>
-  <div class="u-width-full u-mobile-flexbox u-px-md u-padding-bottom-lg">
-    <div class="u-align-middle u-flex u-width-1of3">
-      <div class="u-circle t-team-profile--image u-mx-auto" style="background-image: url('http://placehold.it/300x300')"></div>
-    </div>
-    <div class="u-width-2of3 u-flex">
-      <h5 class="u-uppercase u-padding-bottom-md u-padding-top-md">Team member 1</h5>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-  </div>
-  <div class="u-width-full u-mobile-flexbox u-px-md u-padding-bottom-lg">
-    <div class="u-align-middle u-flex u-width-1of3">
-      <div class="u-circle t-team-profile--image u-mx-auto" style="background-image: url('http://placehold.it/300x300')"></div>
-    </div>
-    <div class="u-width-2of3 u-flex">
-      <h5 class="u-uppercase u-padding-bottom-md u-padding-top-md">Team member 1</h5>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-  </div>
-  <div class="u-width-full u-mobile-flexbox u-px-md u-padding-bottom-lg">
-    <div class="u-align-middle u-flex u-width-1of3">
-      <div class="u-circle t-team-profile--image u-mx-auto" style="background-image: url('http://placehold.it/300x300')"></div>
-    </div>
-    <div class="u-width-2of3 u-flex">
-      <h5 class="u-uppercase u-padding-bottom-md u-padding-top-md">Team member 1</h5>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-  </div>
-  <div class="u-width-full u-mobile-flexbox u-px-md u-padding-bottom-lg">
-    <div class="u-align-middle u-flex u-width-1of3">
-      <div class="u-circle t-team-profile--image u-mx-auto" style="background-image: url('http://placehold.it/300x300')"></div>
-    </div>
-    <div class="u-width-2of3 u-flex">
-      <h5 class="u-uppercase u-padding-bottom-md u-padding-top-md">Team member 1</h5>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-  </div>
-</div>
-
-<footer class="u-py-md">
-  <p class="u-text-size-small u-align-center">Copyright Chilly Techonologies 2016</p>
-</footer>
