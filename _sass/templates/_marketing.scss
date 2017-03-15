@@ -29,14 +29,19 @@
   &:before {
     content: '';
     position: absolute;
-    top: -15vw;
+    top: -37vw;
     left: 0;
     right: 0;
     display: block;    
-    height: 25vw;
+    height: 45vw;
     width: 100vw;
     background: $color-offwhite;
     transform: skew(0, -7deg);
     z-index: $z1-depth;
+
+    @include --small-up {
+      top: -15vw;
+      height: 30vw;
+    }
   }
 }

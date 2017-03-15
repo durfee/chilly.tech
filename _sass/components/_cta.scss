@@ -6,9 +6,9 @@
 //
 
 .c-cta {
-  margin-top: map-get($size-map, xl);
+  margin-top: map-get($size-map, lg);
   padding-bottom: map-get($size-map, xl);
-  margin-bottom: map-get($size-map, lg);
+  margin-bottom: map-get($size-map, md);
 
   opacity: 0;
   visibility: hidden;

@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<header class="u-width-full u-flexbox u-bg-white u-color-black u-padding-top-md u-padding-bottom-md u-padding-left-md u-padding-right-md u-shadow--cool">
-  <div class="u-flex-expand u-uppercase u-text-size-small u-padding-left-sm u-padding-right-sm"><a class="u-color-black" href="/">Chilly</a></div>
+<header class="u-width-full u-flexbox u-bg-white u-color-black u-padding-top-md u-padding-bottom-md u-padding-left-md u-padding-right-md u-shadow--cool u-align-middle">
+  <div class="u-flex-expand u-uppercase u-text-size-small u-padding-left-sm u-padding-right-sm"><a class="u-color-black" href="/"><img src="{{ '/assets/images/icons/color-gradient.svg' | prepend: site.baseurl }}" alt="Chilly Technologies"></a></div>
   <div class="u-flex-shrink u-uppercase u-text-size-small u-padding-left-sm u-padding-right-sm"><a class="u-color-black" href="#features">Features</a></div>
-  <div class="u-flex-shrink u-uppercase u-text-size-small u-padding-left-sm u-padding-right-sm"><a class="u-color-black" href="#team">Team</a></div>
+  <!-- <div class="u-flex-shrink u-uppercase u-text-size-small u-padding-left-sm u-padding-right-sm"><a class="u-color-black" href="#team">Team</a></div> -->
   <div class="u-flex-shrink u-uppercase u-text-size-small u-padding-left-sm u-padding-right-sm"><a class="u-color-black" href="#contact">Contact</a></div>
 </header>
 
@@ -18,9 +18,9 @@ layout: default
         <h4 class="u-margin-bottom-sm">Stop relying on staff to check.</h4>
         <h4> Never lose product again.</h4>
       </div>
-      <div class="c-hero--cta u-margin-top-lg u-flexbox u-flex-column--small-only u-padding-top-xl">
+      <div class="c-hero--cta u-margin-top-md u-flexbox u-flex-column--small-only u-padding-top-lg">
         <a class="c-button js-form-trigger c-button--action">Interested?</a>
-        <a class="c-button u-margin-left-lg--small-up u-margin-top-md--small-only">Learn more</a>
+        <!-- <a class="c-button u-margin-left-lg--small-up u-margin-top-md--small-only">Learn more</a> -->
       </div>
     </div>
     <div class="c-cta u-measure-medium--small-up js-form">
@@ -36,7 +36,7 @@ layout: default
 </div> <!-- /c-hero -->
 
 <div class="u-width-full u-bg-offwhite t-marketing--features u-padding-bottom-lg" id="features">
-  <div class="u-measure-wide u-mx-auto u-padding-left-sm u-padding-right-sm u-margin-top-xl u-margin-bottom-md">
+  <div class="u-measure-wide u-mx-auto u-padding-left-sm u-padding-right-sm u-margin-top-lg u-margin-bottom-md">
   <div class="u-flexbox u-flex-column--small-only u-margin-bottom-xl">
     <div class="u-flex-expand t-feature--item u-padding-bottom-md u-padding-top-md u-padding-left-lg--small-up u-padding-right-sm u-padding-left-sm">
       <h3 class="u-margin-bottom-sm u-uppercase u-color-secondary">Record</h3>
@@ -58,6 +58,7 @@ layout: default
     </div>
   </div>
 
+{% comment %}
     <!-- Price -->
     <div class="u-flexbox u-flex-column--small-only u-margin-bottom-lg">
       
@@ -81,7 +82,6 @@ layout: default
       </div>
     </div>
 
-    <!-- Features -->
     
 
   </div>
@@ -103,4 +103,4 @@ layout: default
   <p class="u-padding-bottom-md">Who made it easy.</p>
 
 </div>
-
+{% endcomment %}

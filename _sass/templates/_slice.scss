@@ -13,12 +13,12 @@
   display: block;
 
   background: $color-brand-secondary url('../assets/img/texture.svg') 0 0 repeat;
-  background-size: 14%;
+  background-size: 30%;
   background-blend-mode: multiply;
 
   z-index: $z1-depth;
 
-  transform: skewX(-10.25deg) translateX(-75%);
+  transform: skewX(-10.25deg) translateX(-60%);
   transition: transform 0.15s ease-in-out;
 
   box-shadow: $shadow-dark;

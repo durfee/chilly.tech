@@ -1545,9 +1545,11 @@ a {
   list-style: circle; }
 
 .c-cta {
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding-bottom: 4rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem;
+  opacity: 0;
+  visibility: hidden; }
 
 .c-cta--input {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 7px 14px rgba(50, 50, 93, 0.11); }
@@ -1555,16 +1557,17 @@ a {
 .c-hero {
   height: 75vh;
   width: 100vw; }
-  .c-hero:after {
+  .c-hero:before {
     content: '';
     position: absolute;
-    top: -15vh;
+    top: -20vh;
     left: 0;
     right: 0;
     display: block;
     height: 100vh;
     width: 100vw;
     background: linear-gradient(-135deg, #89E1E2, #B0FCE2, #6187CF);
+    background-size: cover;
     transform: skew(0, -7deg);
     z-index: -1; }
 
@@ -1578,10 +1581,10 @@ a {
   bottom: 0;
   display: block;
   background: #0B2C5B url("../assets/img/texture.svg") 0 0 repeat;
-  background-size: 14%;
+  background-size: 30%;
   background-blend-mode: multiply;
   z-index: -1;
-  transform: skewX(-10.25deg) translateX(-75%);
+  transform: skewX(-10.25deg) translateX(-60%);
   transition: transform 0.15s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); }
   @media screen and (max-width: 35rem) {
@@ -1603,25 +1606,39 @@ a {
     width: 400px;
     height: 320px; } }
 
-.t-feature--item {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-  @media screen and (min-width: 35rem) {
-    .t-feature--item {
-      border-right: 1px solid rgba(0, 0, 0, 0.1); } }
+@media screen and (min-width: 35rem) {
+  .t-feature--item:not(:last-child) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1); } }
 
 .t-marketing--features {
   position: relative; }
   .t-marketing--features:before {
     content: '';
     position: absolute;
-    top: -15vw;
+    top: -37vw;
     left: 0;
     right: 0;
     display: block;
-    height: 25vw;
+    height: 45vw;
     width: 100vw;
     background: #f9f9fa;
     transform: skew(0, -7deg);
     z-index: -1; }
+    @media screen and (min-width: 35rem) {
+      .t-marketing--features:before {
+        top: -15vw;
+        height: 30vw; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-5%); }
+  50% {
+    opacity: 1; } }
+.a-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  visibility: visible; }
 
 /*# sourceMappingURL=main.css.map */
